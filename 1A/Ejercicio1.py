@@ -27,7 +27,7 @@ else:
 
 estudiante = {
     "nombre": "alex",
-    "edad": 17,
+    "edad": 16,
     "materia": "mates"
 }
 

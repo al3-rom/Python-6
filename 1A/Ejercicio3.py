@@ -21,7 +21,7 @@ for nombre,precio in productos.items():
 # Agrega un nuevo producto al diccionario "productos" utilizando una nueva clave y
 # valor. Imprime el diccionario actualizado.
 
-productos["Manzana"] = {"nombre": "manzana", "precio": 10}
+productos["Manzana"] = {"nombre": "manzana", "precio": 11}
 print(productos)
 
 # Crea un diccionario llamado "equipos" que contenga tres entradas. Cada entrada

@@ -13,7 +13,7 @@ print("/////")
 # Agrega un nuevo estudiante a la lista "estudiantes" utilizando un diccionario con las
 # mismas claves "nombre" y "edad". Imprime la lista actualizada.
 
-estudiantes.append({"nombre": "alex", "edad": 22})
+estudiantes.append({"nombre": "alex", "edad": 23})
 print(estudiantes)
 print("/////")
 # .Elimina el segundo estudiante de la lista "estudiantes". Imprime la lista actualizada
