@@ -16,10 +16,14 @@ print(mi_diccionario["nombre"])
 
 mi_diccionario.get("edad")
 
-if "edad" in mi_diccionario:
-    print("True")
-else:
-    print("False")
+# Manera mas facil:
+print("edad" in mi_diccionario)
+
+#if "edad" in mi_diccionario:
+#    print("True")
+#else:
+#    print("False")
+
 
 # Crea un diccionario llamado "estudiante" con los siguientes pares clave-valor:
 # "nombre" con el nombre del alumno, "edad" con su edad y "materia" con su materia
@@ -44,43 +48,52 @@ del(estudiante["materia"])
 
 # Imprime todas las claves en el diccionario “estudiante". 
 
-print(estudiante.items())
+for clave in estudiante.keys():
+    print(clave)
 
 #  Crea un diccionario llamado "agenda" con tres entradas: "Juan" con el valor
 # "1234567890", "Joana" con el valor "9876543210" y "Jimena" con el valor
 # “5555555555”.
 
 agenda = {
-    "Juan": 1234567890,
-    "Joana": 9876543210,
-    "Jimena": 5555555555,
+    "Juan": "1234567890",
+    "Joana": "9876543210",
+    "Jimena": "5555555555",
 }
 
 # Agrega una nueva entrada al diccionario "agenda" con la clave "Julio" y el valor
 # “9998887777". 
 
-agenda["Julio"] = 9998887777
+agenda["Julio"] = "9998887777"
 
 # Imprime el número de entradas (pares clave-valor) en el diccionario “agenda". 
 
-print(agenda)
+print(len(agenda))
 
 # Crea una lista llamada "claves" que contenga todas las claves del diccionario
 # “agenda"
 
-claves = []
 
-for clave in agenda.values():
-    claves.append(clave)
+# Mas facil
+
+claves = list(agenda.keys())
+
+#claves = []
+
+# for clave in agenda.values():
+#    claves.append(clave)
+
 print(claves)
 
 # Verifica si la clave "Juan" existe en el diccionario "agenda". Imprime "True" si existe y
 # "False" en caso contrario.
 
-if "Juan" in agenda:
-    print("True")
-else:
-    print("False")
+print("Juan" in agenda)
+
+#if "Juan" in agenda:
+    #print("True")
+#else:
+    #print("False")
 
 # Elimina la entrada con la clave “Jimena”. 
 
@@ -95,13 +108,19 @@ for nombre, numero in agenda.items():
 # Utiliza el método "get()" para obtener el valor asociado con la clave "Juan" en el
 # diccionario "agenda". Si la clave no existe, imprime "Clave no encontrada”.
 
-valor = agenda.get("Juan")
+# valor = agenda.get("Juan")
 
-if valor is not None:
-    print(valor)
-else:
-    print("Clave no encontrada")
+# O mas facil
+
+valor = agenda.get("Juan", "Clave no encontrada")
+print(valor)
+#if valor is not None:
+#    print(valor)
+#else:
+#    print("Clave no encontrada")
 
 # Borra todas las entradas del diccionario “agenda”
-del(agenda)
+print(agenda)
+agenda.clear()
+print(agenda)
 

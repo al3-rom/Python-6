@@ -6,8 +6,10 @@ estudiantes = [
     {"nombre": "alejandro", "edad": 19},
     {"nombre": "alvaro", "edad": 21}
     ]
-
-print(estudiantes)
+for estudiante in estudiantes:
+    nombre = estudiante["nombre"]
+    edad = estudiante["edad"]
+    print("Nombre:", nombre.title(), "Edad:", edad)
 print("/////")
 
 # Agrega un nuevo estudiante a la lista "estudiantes" utilizando un diccionario con las

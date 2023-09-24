@@ -48,7 +48,7 @@ for equipo, nombre in equipos.items():
     titulo_equipo = nombre.get("nombre")
     titulo_jugadores = nombre.get("jugadores")
 
-    print(f"El nobmre del equipo es: {titulo_equipo} y los jugadores son {titulo_jugadores}")
+    print(f"El nombre del equipo es: {titulo_equipo} y los jugadores son {titulo_jugadores}")
 
 # Agrega un nuevo equipo al diccionario "equipos" utilizando una nueva clave y valor.
 # La lista de jugadores debe contener al menos tres nombres. Imprime el diccionario
